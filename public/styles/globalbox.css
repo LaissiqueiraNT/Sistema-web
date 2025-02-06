@@ -1,0 +1,171 @@
+.box{
+    position: fixed; /* Faz a caixa ficar fixa */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para garantir centralização perfeita */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    position: fixed;
+}
+p {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px;
+    /* Espaço para o ícone do olho */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input:focus {
+    border-color: #0f9fca;
+    outline: none;
+}
+
+/* Estilo para o botão */
+#btn {
+    background-color: #3763db;
+    color: white;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#btn2 {
+    background-color: #0f9fca;
+    color: white;
+    padding: 12px 20px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0f9fca;
+}
+#olho{
+    position: absolute;
+    right: 10px;
+    top: 50%;  /* Centraliza verticalmente */
+    transform: translateY(-50%);  /* Ajusta o alinhamento ao centro */
+    cursor: pointer;
+    width: 25px;
+    height: auto;
+}
+
+/* Torna o ícone visível ou invisível conforme necessário */
+#olhoaberto{
+    display: none;
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    top: 50%;  /* Centraliza verticalmente */
+    transform: translateY(-50%);  /* Ajusta o alinhamento ao centro */
+    cursor: pointer;
+    width: 25px;
+    height: auto;
+}
+
+/* Estilo do ícone de olho */
+#olho2, #olhoaberto2, #olho1, #olhoaberto1, #olho3, #olhoaberto3  {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;  /* Coloca o ícone na parte inferior do campo */
+    cursor: pointer;
+    width: 25px;
+    height: auto;
+}
+
+/* Torna o ícone visível ou invisível conforme necessário */
+#olhoaberto2, #olhoaberto1, #olhoaberto3  {
+    display: none;
+}
+#button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    /* Cor do texto */
+}
+#esqueci{
+    cursor: pointer;
+    color:  #0f9fca;
+    font-weight: 600;
+}
+select{
+    margin-bottom: 15px;
+    position: relative;
+    color: #666;
+    display: block;
+    
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px;
+    /* Espaço para o ícone do olho */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+select:focus{
+border-color:  #0f9fca;
+    outline: none;
+}
+label{
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    margin-bottom: 5px;
+}
+.ladolado {
+    display: flex;
+    justify-content: space-between; /* Espaço entre a imagem e o título */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    width: 100%;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    margin-left: -17px;
+}
+
+#back {
+    width: 25px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    cursor: pointer; /* Faz com que o cursor mude ao passar sobre a imagem */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Centraliza o título */
+    flex-grow: 1; /* Permite que o título ocupe o espaço restante */
+}

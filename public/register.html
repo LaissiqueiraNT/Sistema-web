@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles/stylebase.css">
+    <link rel="stylesheet" href="./styles/globalbox.css">
+    <link rel="icon" type="image/x-icon" href="./img/sistema.png">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <div class="ladolado">
+        <img id="back" src="./img/voltar.png">
+        <h1>Cadastro</h1>
+    </div>
+        <p>Por favor, coloque um sobrenome</p>
+        <div class="input-group">
+            <label>Nome</label>
+            <input type="text" id="username">
+        </div>
+        <div class="input-group">
+            <label>Sobrenome</label>
+            <input type="text" id="lastname">
+        </div>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="input-group">
+            <label>Senha</label>
+            <input type="password" id="password">
+            <img id="olho3" src="./img/olhofechado.png" alt="Mostrar senha">
+            <img id="olhoaberto3" src="./img/olhoaberto.png" alt="Mostrar senha">
+        </div>
+
+        <label id="position">Setor</label>
+        <select id="sector" name="select">
+            <option  style="color: #666;" disabled selected>Selecione seu setor</option>
+            <option value="TI">TI</option>
+            <option value="Producao">Produção</option>
+            <option value="Suprimentos">Suprimentos</option>
+            <option value="PCP">PCP</option>
+            <option value="Adm Vendas">Adm Vendas</option>
+            <option value="admfinanceiro">Adm Financeiro</option>
+            <option value="RH">RH</option>
+            <option value="Almoxarifado">Almoxarifado</option>
+            <option value="Sgi">SGI</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Recepcao">Recepção</option>
+            <option value="Compras">Compras</option>
+            <option value="Projetos">Projetos</option>
+            <option value="ST">Segurança do trabalho</option>
+            <option value="Oficina">Oficina</option>
+            <option value="Contabilidade">Contabilidade</option>
+            <option value="Gerencia">Gerência</option>
+            <option value="CQ">CQ</option>
+            <option value="Trafos">Trafos</option>
+          </select>
+          <label id="position" >Cargo</label>
+          <select id="cargo" name="select">
+            <option disabled selected>Selecione seu cargo</option>
+            <option value="usuario">Usuário</option>
+        </select>
+        
+        <button id="btn">Cadastrar</button>
+    </div>
+    </div>
+    <script src="./frontend/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

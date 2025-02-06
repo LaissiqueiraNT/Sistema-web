@@ -1,0 +1,137 @@
+/* Estilo básico do body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para a sidebar */
+.sidebar {
+    height: 100vh;
+    width: 90px;
+    background-color: #0e37a8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;  /* Faz com que a sidebar fique acima do menu superior */
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Hover nos links da sidebar */
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para o conteúdo da página */
+.content {
+    margin-left: 120px;  /* Ajusta a margem para não ficar tão distante da sidebar */
+    padding: 20px;
+    width: calc(100% - 120px);  /* Garante que o conteúdo ocupe o espaço restante */
+    padding-top: 60px;  /* Ajuste para compensar o menu fixo no topo */
+}
+
+/* Estilos para a navegação horizontal */
+.top-nav {
+    background-color: #c4c4c4;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 10;  
+    display: flex;
+    justify-content: center;  /* Centraliza os itens */
+    align-items: center;  /* Alinha verticalmente no centro */
+}
+
+/* Estilos para o container dos elementos de entrada */
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Centraliza os elementos dentro da barra */
+    gap: 15px;  /* Espaçamento entre os elementos */
+}
+
+/* Ajusta o tamanho e estilo dos selects e input */
+select,
+input {
+    margin-bottom: 15px;
+    color: #666;
+    display: block;
+    width: 250px;  /* Ajustado para uma largura mais confortável */
+    padding: 10px;
+    padding-right: 35px; /* Espaço para o ícone do olho */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+select:focus,
+input:focus {
+    border-color: #0e37a8;
+    outline: none;
+}
+
+/* Hover nos links da barra horizontal */
+.top-nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Ajusta o tamanho dos ícones */
+#icons {
+    width: 50px; /* O tamanho do ícone será o mesmo da sidebar */
+    margin-right: 8px; /* Distância entre o ícone e o texto */
+}
+
+/* Adicionalmente, estilizando o título principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+#novo{
+    background-color: #0e37a8;
+    color: white;
+    height: 40px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#novo:hover {
+    background-color: #0e37a8;
+}
+#lupa{
+    position: absolute;
+    right: 10px;
+    top: 50%;  /* Centraliza verticalmente */
+    transform: translateY(-50%);  /* Ajusta o alinhamento ao centro */
+    cursor: pointer;
+    height: auto;
+    width: 25px;
+}
+
+/* Torna o ícone visível ou invisível conforme necessário */
